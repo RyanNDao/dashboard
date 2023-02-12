@@ -1,0 +1,276 @@
+body{
+    margin: 0px;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr 4fr;
+}
+
+.sidebar-container{
+    grid-row: 1 / 3;
+    background-color:#3b82f6;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.logo-container{
+    padding: 1.5rem;
+    font-size: 1.75rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    
+}
+
+.sidebar-selection, .settings-selection{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+.selection-container, .settings-container{
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.navbar-container{
+    grid-column: 2 / 3;
+    background-color: #fafafa;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+    padding: 5px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    gap: 20px;
+}
+
+.search input{
+    background-color: #cbd5e1;
+    border-width: 0px;
+    border-radius: 1rem; 
+    width: 75%;
+    height: 1.5rem;
+}
+
+.account-thumbnail{
+    font-weight: bold;
+    font-size: 1.5rem;
+    justify-self: end;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    align-items: center;
+    justify-items: end;
+    margin-right: 50px;
+    margin-left: 130px;
+}
+
+.navbar-profile{
+    display: flex;
+    gap: 5px;
+    margin-left: 20px;
+}
+
+.profile-container{
+    display: flex;
+    font-weight: bold;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.profile-container img, .navbar-profile img{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin: 12px;
+}
+
+.navbar-buttons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.navbar-buttons button{
+    background-color: #ccfbf1;
+    color: black;
+    height: 38px;
+    border-radius: 32px;
+    gap: .5rem;
+    width: 75%;
+}
+
+.thumbnail{
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    margin: 12px;
+}
+
+.icon{
+    width: 25px;
+    height: 25px;
+    margin: 6px;
+}
+
+.content-container{
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    background-color: #cbd5e1;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+}
+
+.section-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 7px;
+    margin-bottom: 12px;
+}
+
+
+.projects{
+    grid-row: 1 / 3;
+    padding: 30px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.cards-container{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    height: calc(100% - 60px);
+}
+
+.card{
+    background-color: #fafafa;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 3px 2px 1px grey;
+}
+
+.color-streak{
+    height: 100%;
+    width: 2%;
+    background-color: orange;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    flex: 1;
+    font-size: .9rem;
+}
+
+.card-content h3{
+    margin-bottom: 3px;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.card-icons{
+    align-self: flex-end;
+    margin-top: auto;
+}
+
+
+.announcements-container{
+    padding: 30px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.announcement-box{
+    background-color: #fafafa;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    height: 80%;
+    border-radius: 10px;
+    padding: 10px 35px;
+}
+
+.announcement{
+    display: flex;
+    flex-direction: column;
+}
+
+.announcement p{
+    margin-top: 7px;
+    margin-bottom: 3px;
+}
+
+.announcement hr{
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: grey;
+    border: none;
+    height: 1px;
+    margin-top: auto;
+}
+
+.announcement-title{
+    font-weight: bold;
+}
+.announcement-content{
+    font-size: .8rem;
+}
+
+.trending-container{
+    padding: 0px 30px 30px 10px;
+    margin-top: -20px;
+}
+
+.trending-container p{
+    margin-top: 0px;
+}
+
+.trending-box{
+    background-color: #fafafa;
+    height: 80%;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr 4fr;
+    padding: 15px;
+}
+
+.trending-profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trending-profile p{
+    margin: 0px;
+}
+
+.trending-name{
+    color: grey;
+}
