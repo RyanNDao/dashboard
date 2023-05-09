@@ -1,4 +1,4 @@
-# Todo List
+# Admin Dashboard Page
 
 ## Links
 - [Link to the application](https://ryanndao.github.io/dashboard/)
